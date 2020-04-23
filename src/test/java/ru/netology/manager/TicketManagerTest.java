@@ -40,9 +40,9 @@ class TicketManagerTest {
     }
 
     @Test
-    void shouldFindAllNegative() {
-        Ticket[] expected = {};
+   void shouldFindNothing() {
         Ticket[] actual = manager.findAll("KZN", "LED");
+        Ticket[] expected = {};
         assertArrayEquals(expected, actual);
     }
 }
