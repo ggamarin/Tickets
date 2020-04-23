@@ -39,6 +39,7 @@ class TicketManagerTest {
     }
 
     @Test
+
     void shouldFindNothing() {
         Ticket[] actual = manager.findAll("KZN", "LED", new TicketByPriceAscComparator());
         Ticket[] expected = {};
