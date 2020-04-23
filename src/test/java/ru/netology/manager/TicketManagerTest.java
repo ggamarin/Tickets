@@ -33,7 +33,6 @@ class TicketManagerTest {
         Ticket[] expected = {
                 testticket1,
                 testticket3
-
         };
         assertArrayEquals(expected, actual);
     }
