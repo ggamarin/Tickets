@@ -1,15 +1,13 @@
 package ru.netology.repository;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 import ru.netology.domain.Ticket;
 
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class TicketRepository {
-    Ticket[] tickets = new Ticket[0];
+    private Ticket[] tickets = new Ticket[0];
 
     public void save(Ticket ticket) {
         int length = tickets.length + 1;
