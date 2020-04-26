@@ -2,7 +2,6 @@ package ru.netology.manager;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import ru.netology.domain.Ticket;
 import ru.netology.repository.TicketRepository;
 
@@ -11,7 +10,6 @@ import java.util.Comparator;
 
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 public class TicketManager {
     private TicketRepository repository;
 
@@ -31,7 +29,7 @@ public class TicketManager {
                 result = tmp;
             }
         }
-            Arrays.sort(result,comparator);
+        Arrays.sort(result, comparator);
         return result;
     }
 }

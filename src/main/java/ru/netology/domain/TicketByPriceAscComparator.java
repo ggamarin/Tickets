@@ -3,8 +3,8 @@ package ru.netology.domain;
 import java.util.Comparator;
 
 public class TicketByPriceAscComparator implements Comparator<Ticket> {
-    public int compare(Ticket o1, Ticket o2) {
-        return o1.getTraveltime() - o2.getTraveltime();
-
+    @Override
+    public int compare(Ticket t1, Ticket t2) {
+        return t1.getPrice() - t2.getPrice();
     }
 }
